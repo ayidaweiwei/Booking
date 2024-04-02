@@ -1,7 +1,6 @@
-package com.booking;
+package main.javacom.booking;
 
-import com.booking.bo.BookingRequest;
-import com.booking.bo.Meeting;
+import main.javacom.booking.bo.Meeting;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -114,3 +113,39 @@ public class MeetingScheduler {
         }
     }
 }
+
+
+class BookingRequest{
+    private Date submissionTime;
+    private String employeeId;
+    private Date startTime;
+    private int durationHours;
+
+    public BookingRequest(Date submissionTime, String employeeId, Date startTime, int durationHours) {
+        this.submissionTime = submissionTime;
+        this.employeeId = employeeId;
+        this.startTime = startTime;
+        this.durationHours = durationHours;
+    }
+
+
+    public Date getSubmissionTime() {
+        return submissionTime;
+    }
+
+
+    public String getEmployeeId() {
+        return employeeId;
+    }
+
+
+    public Date getStartTime() {
+        return startTime;
+    }
+
+
+    public int getDurationHours() {
+        return durationHours;
+    }
+}
+

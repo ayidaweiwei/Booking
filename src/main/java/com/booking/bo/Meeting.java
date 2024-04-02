@@ -1,4 +1,4 @@
-package com.booking.bo;
+package main.javacom.booking.bo;
 
 import java.util.Date;
 
