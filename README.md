@@ -15,14 +15,15 @@ To compile and package the application into a runnable JAR file, navigate to the
 
 ````bash
 mvn clean package
-This command generates a meeting-scheduler-1.0-SNAPSHOT.jar file within the target directory.
+This command generates a Booking-1.0-SNAPSHOT.jar
+ file within the target directory.
 
 Running the Application
 After building the application, run it using Java with the following command:
 
 bash
 
-java -jar target/meeting-scheduler-1.0-SNAPSHOT.jar
+java -jar target/Booking-1.0-SNAPSHOT.jar
 Note: The application reads booking requests from the standard input (stdin). Prepare your input accordingly before running the application.
 
 Input Format

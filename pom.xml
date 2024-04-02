@@ -35,7 +35,7 @@
                     <archive>
                         <manifest>
                             <addClasspath>true</addClasspath>
-                            <mainClass>com.booking.MeetingScheduler</mainClass>
+                            <mainClass>main.java.com.booking.MeetingScheduler</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

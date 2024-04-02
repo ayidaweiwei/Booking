@@ -1,6 +1,6 @@
-package main.javacom.booking;
+package main.java.com.booking;
 
-import main.javacom.booking.bo.Meeting;
+import main.java.com.booking.bo.Meeting;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
