@@ -1,0 +1,33 @@
+package com.booking.bo;
+
+import java.util.Date;
+
+public class BookingRequest {
+    private Date submissionTime;
+    private String employeeId;
+    private Date startTime;
+    private int durationHours;
+
+    public BookingRequest(Date submissionTime, String employeeId, Date startTime, int durationHours) {
+        this.submissionTime = submissionTime;
+        this.employeeId = employeeId;
+        this.startTime = startTime;
+        this.durationHours = durationHours;
+    }
+
+    public Date getSubmissionTime() {
+        return submissionTime;
+    }
+
+    public String getEmployeeId() {
+        return employeeId;
+    }
+
+    public Date getStartTime() {
+        return startTime;
+    }
+
+    public int getDurationHours() {
+        return durationHours;
+    }
+}
