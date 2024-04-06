@@ -1,5 +1,6 @@
 package main.java.com.booking;
 
+
 import main.java.com.booking.bo.Meeting;
 
 import java.text.ParseException;
@@ -95,7 +96,7 @@ public class MeetingScheduler {
         endCal.add(Calendar.HOUR_OF_DAY, request.getDurationHours());
 
         for (Meeting meeting : meetingsForDay) {
-            if (!startCal.getTime().after(meeting.getEndTime()) && !endCal.getTime().before(meeting.getStartTime())) {
+            if (startCal.getTime().before(meeting.getEndTime()) && endCal.getTime().after(meeting.getStartTime())) {
                 return; // Overlaps with an existing meeting
             }
         }
@@ -113,7 +114,6 @@ public class MeetingScheduler {
         }
     }
 }
-
 
 class BookingRequest{
     private Date submissionTime;
@@ -148,4 +148,5 @@ class BookingRequest{
         return durationHours;
     }
 }
+
 
